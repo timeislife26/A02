@@ -58,7 +58,18 @@ def my_main(spark, my_dataset_dir, top_n_bikes):
     # START OF STUDENT CODE
     # --------------------------------------------------------
 
+    df = inputDF.select(pyspark.sql.functions.col("bike_id"), pyspark.sql.functions.col("trip_duration"))
+    df.persist()
 
+    groupedSumDf = df.groupBy("bike_id").agg({"trip_duration" : "sum"})
+    groupedCountDf = df.withColumnRenamed("bike_id", "Temp_id")
+    groupedCountDf = groupedCountDf.groupBy("Temp_id").agg({"trip_duration" : "count"})
+    #groupedSumDf = groupedDf.orderBy(pyspark.sql.functions.col("sum(trip_duration)").desc())
+    joinedDF = groupedSumDf.join(groupedCountDf, groupedSumDf["bike_id"] == groupedCountDf["Temp_id"], "full_outer")
+    limitedDF = joinedDF.orderBy(pyspark.sql.functions.col("sum(trip_duration)").desc()).limit(top_n_bikes)
+    limitedDF = limitedDF.withColumnRenamed("sum(trip_duration)", "totalTime")
+    limitedDF = limitedDF.withColumnRenamed("count(trip_duration)", "numTrips")
+    solutionDF = limitedDF.select("bike_id", "totalTime", "numTrips")
 
 
 
@@ -94,7 +105,7 @@ if __name__ == '__main__':
     top_n_bikes = 10
 
     # 2. We select the Spark execution mode: Local (0), Google Colab (1) or Databricks (2)
-    local_0_GoogleColab_1_databricks_2 = 0
+    local_0_GoogleColab_1_databricks_2 = 2
 
     if (local_0_GoogleColab_1_databricks_2 == 1):
         import google.colab
