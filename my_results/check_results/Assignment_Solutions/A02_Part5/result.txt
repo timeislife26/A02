@@ -1,0 +1,796 @@
+station_name=N 6 St & Bedford Ave; pagerank=17.59
+station_name=1 Ave & E 78 St; pagerank=15.67
+station_name=Fulton St & Adams St; pagerank=15.38
+station_name=E 11 St & 1 Ave; pagerank=15.11
+station_name=Howard St & Centre St; pagerank=15.06
+station_name=Suffolk St & Stanton St; pagerank=14.23
+station_name=Vesey Pl & River Terrace; pagerank=13.77
+station_name=Clinton Ave & Myrtle Ave; pagerank=13.72
+station_name=1 Ave & E 18 St; pagerank=13.68
+station_name=Lispenard St & Broadway; pagerank=13.51
+station_name=E 59 St & Madison Ave; pagerank=13.22
+station_name=E 23 St & 1 Ave; pagerank=13.07
+station_name=E 51 St & Lexington Ave; pagerank=12.76
+station_name=W 15 St & 10 Ave; pagerank=12.5
+station_name=Vernon Blvd & 50 Ave; pagerank=12.29
+station_name=W 43 St & 10 Ave; pagerank=11.79
+station_name=Bank St & Hudson St; pagerank=11.72
+station_name=Murray St & West St; pagerank=11.55
+station_name=E 81 St & York Ave; pagerank=11.28
+station_name=W 64 St & Thelonious Monk Circle; pagerank=10.58
+station_name=E 2 St & Avenue C; pagerank=10.48
+station_name=3 St & 7 Ave; pagerank=10.44
+station_name=Riverside Dr & W 82 St; pagerank=10.21
+station_name=Classon Ave & St Marks Ave; pagerank=10.2
+station_name=Underhill Ave & Pacific St; pagerank=10.18
+station_name=Broad St & Bridge St; pagerank=9.92
+station_name=Broadway & Battery Pl; pagerank=1.07
+station_name=Allen St & Rivington St; pagerank=1.03
+station_name=Lafayette St & Jersey St; pagerank=1.03
+station_name=W Broadway & Spring Street; pagerank=1.02
+station_name=Allen St & Stanton St; pagerank=1.0
+station_name=E 17 St & Broadway; pagerank=0.99
+station_name=E 39 St & 3 Ave; pagerank=0.99
+station_name=Mott St & Prince St; pagerank=0.99
+station_name=Pershing Square North; pagerank=0.99
+station_name=Christopher St & Greenwich St; pagerank=0.98
+station_name=E 6 St & Avenue B; pagerank=0.98
+station_name=Grand St & Elizabeth St; pagerank=0.98
+station_name=Greenwich St & W Houston St; pagerank=0.98
+station_name=Jay St & York St; pagerank=0.97
+station_name=Kent Ave & N 7 St; pagerank=0.97
+station_name=S 3 St & Bedford Ave; pagerank=0.97
+station_name=Allen St & Hester St; pagerank=0.96
+station_name=S 5 Pl & S 5 St; pagerank=0.96
+station_name=Forsyth St & Canal St; pagerank=0.95
+station_name=Fulton St & Broadway; pagerank=0.95
+station_name=Great Jones St; pagerank=0.95
+station_name=Old Slip & Front St; pagerank=0.95
+station_name=Rivington St & Chrystie St; pagerank=0.95
+station_name=8 Ave & W 31 St; pagerank=0.94
+station_name=Barrow St & Hudson St; pagerank=0.94
+station_name=Broadway & E 22 St; pagerank=0.94
+station_name=E 10 St & Avenue A; pagerank=0.94
+station_name=E 12 St & 3 Ave; pagerank=0.94
+station_name=E 33 St & 1 Ave; pagerank=0.94
+station_name=S 4 St & Wythe Ave; pagerank=0.94
+station_name=Stanton St & Chrystie St; pagerank=0.94
+station_name=W 20 St & 11 Ave; pagerank=0.94
+station_name=Washington St & Gansevoort St; pagerank=0.94
+station_name=West St & Chambers St; pagerank=0.94
+station_name=Wythe Ave & Metropolitan Ave; pagerank=0.94
+station_name=Forsyth St & Broome St; pagerank=0.92
+station_name=John St & William St; pagerank=0.92
+station_name=Murray St & Greenwich St; pagerank=0.92
+station_name=1 Ave & E 44 St; pagerank=0.91
+station_name=Barclay St & Church St; pagerank=0.91
+station_name=Cleveland Pl & Spring St; pagerank=0.91
+station_name=E 31 St & 3 Ave; pagerank=0.91
+station_name=E 39 St & 2 Ave; pagerank=0.91
+station_name=E 4 St & 2 Ave; pagerank=0.91
+station_name=Front St & Maiden Ln; pagerank=0.91
+station_name=Front St & Washington St; pagerank=0.91
+station_name=Liberty St & Broadway; pagerank=0.91
+station_name=MacDougal St & Washington Sq; pagerank=0.91
+station_name=St Marks Pl & 1 Ave; pagerank=0.91
+station_name=St Marks Pl & 2 Ave; pagerank=0.91
+station_name=Sullivan St & Washington Sq; pagerank=0.91
+station_name=University Pl & E 14 St; pagerank=0.91
+station_name=W 45 St & 6 Ave; pagerank=0.91
+station_name=8 Ave & W 33 St; pagerank=0.9
+station_name=Broadway & E 14 St; pagerank=0.9
+station_name=Broadway & W 25 St; pagerank=0.9
+station_name=Carmine St & 6 Ave; pagerank=0.9
+station_name=Cooper Square & Astor Pl; pagerank=0.9
+station_name=E 13 St & Avenue A; pagerank=0.9
+station_name=E 15 St & 3 Ave; pagerank=0.9
+station_name=E 2 St & 2 Ave; pagerank=0.9
+station_name=E 20 St & Park Ave; pagerank=0.9
+station_name=Franklin St & W Broadway; pagerank=0.9
+station_name=Jay St & Tech Pl; pagerank=0.9
+station_name=Lexington Ave & E 29 St; pagerank=0.9
+station_name=MacDougal St & Prince St; pagerank=0.9
+station_name=Washington Pl & 6 Ave; pagerank=0.9
+station_name=Centre St & Chambers St; pagerank=0.89
+station_name=E 2 St & Avenue B; pagerank=0.88
+station_name=E 25 St & 2 Ave; pagerank=0.88
+station_name=E 58 St & 3 Ave; pagerank=0.88
+station_name=E 7 St & Avenue A; pagerank=0.88
+station_name=Little West St & 1 Pl; pagerank=0.88
+station_name=Park Pl & Church St; pagerank=0.88
+station_name=Pearl St & Hanover Square; pagerank=0.88
+station_name=W 37 St & 5 Ave; pagerank=0.88
+station_name=1 Ave & E 68 St; pagerank=0.87
+station_name=6 Ave & Canal St; pagerank=0.87
+station_name=Berry St & N 8 St; pagerank=0.87
+station_name=Broadway & W 38 St; pagerank=0.87
+station_name=Broadway & W 41 St; pagerank=0.87
+station_name=E 19 St & 3 Ave; pagerank=0.87
+station_name=E 2 St & Avenue A; pagerank=0.87
+station_name=E 47 St & Park Ave; pagerank=0.87
+station_name=E 48 St & 5 Ave; pagerank=0.87
+station_name=Leonard St & Church St; pagerank=0.87
+station_name=Stanton St & Norfolk St; pagerank=0.87
+station_name=W 15 St & 7 Ave; pagerank=0.87
+station_name=William St & Pine St; pagerank=0.87
+station_name=12 Ave & W 40 St; pagerank=0.86
+station_name=9 Ave & W 28 St; pagerank=0.86
+station_name=Broadway & W 29 St; pagerank=0.86
+station_name=Broadway & W 37 St; pagerank=0.86
+station_name=E 11 St & 2 Ave; pagerank=0.86
+station_name=E 16 St & 5 Ave; pagerank=0.86
+station_name=E 16 St & Irving Pl; pagerank=0.86
+station_name=E 32 St & Park Ave; pagerank=0.86
+station_name=Gansevoort St & Hudson St; pagerank=0.86
+station_name=LaGuardia Pl & W 3 St; pagerank=0.86
+station_name=Lexington Ave & E 36 St; pagerank=0.86
+station_name=Mercer St & Spring St; pagerank=0.86
+station_name=Pier 40 - Hudson River Park; pagerank=0.86
+station_name=South St & Whitehall St; pagerank=0.86
+station_name=W 11 St & 6 Ave; pagerank=0.86
+station_name=W 13 St & 5 Ave; pagerank=0.86
+station_name=W 18 St & 6 Ave; pagerank=0.86
+station_name=W 21 St & 6 Ave; pagerank=0.86
+station_name=W 22 St & 8 Ave; pagerank=0.86
+station_name=W 26 St & 8 Ave; pagerank=0.86
+station_name=W 27 St & 7 Ave; pagerank=0.86
+station_name=W 4 St & 7 Ave S; pagerank=0.86
+station_name=Greenwich Ave & 8 Ave; pagerank=0.85
+station_name=Norfolk St & Broome St; pagerank=0.85
+station_name=State St & Smith St; pagerank=0.85
+station_name=Broadway & W 60 St; pagerank=0.84
+station_name=Centre St & Worth St; pagerank=0.84
+station_name=E 27 St & 1 Ave; pagerank=0.84
+station_name=E 52 St & 2 Ave; pagerank=0.84
+station_name=E 9 St & Avenue C; pagerank=0.84
+station_name=Hope St & Union Ave; pagerank=0.84
+station_name=W 15 St & 6 Ave; pagerank=0.84
+station_name=1 Ave & E 30 St; pagerank=0.83
+station_name=2 Ave & E 31 St; pagerank=0.83
+station_name=Avenue D & E 3 St; pagerank=0.83
+station_name=Bayard St & Baxter St; pagerank=0.83
+station_name=Broadway & Roebling St; pagerank=0.83
+station_name=Broadway & W 49 St; pagerank=0.83
+station_name=Cherry St; pagerank=0.83
+station_name=Division St & Bowery; pagerank=0.83
+station_name=E 12 St & 4 Av; pagerank=0.83
+station_name=E 58 St &  1 Ave (NW Corner); pagerank=0.83
+station_name=E 6 St & Avenue D; pagerank=0.83
+station_name=Grand Army Plaza & Central Park S; pagerank=0.83
+station_name=Lafayette St & E 8 St; pagerank=0.83
+station_name=Mercer St & Bleecker St; pagerank=0.83
+station_name=Metropolitan Ave & Bedford Ave; pagerank=0.83
+station_name=Peck Slip & Front St; pagerank=0.83
+station_name=South End Ave & Liberty St; pagerank=0.83
+station_name=South St & Gouverneur Ln; pagerank=0.83
+station_name=W 13 St & 7 Ave; pagerank=0.83
+station_name=W 16 St & The High Line; pagerank=0.83
+station_name=W 22 St & 10 Ave; pagerank=0.83
+station_name=W 25 St & 6 Ave; pagerank=0.83
+station_name=W 43 St & 6 Ave; pagerank=0.83
+station_name=W 52 St & 6 Ave; pagerank=0.83
+station_name=Water - Whitehall Plaza; pagerank=0.83
+station_name=5 Ave & E 29 St; pagerank=0.82
+station_name=6 Ave & Broome St; pagerank=0.82
+station_name=9 Ave & W 18 St; pagerank=0.82
+station_name=9 Ave & W 45 St; pagerank=0.82
+station_name=Broadway & W 53 St; pagerank=0.82
+station_name=E 25 St & 1 Ave; pagerank=0.82
+station_name=E 30 St & Park Ave S; pagerank=0.82
+station_name=E 55 St & Lexington Ave; pagerank=0.82
+station_name=FDR Drive & E 35 St; pagerank=0.82
+station_name=Lexington Ave & E 26 St; pagerank=0.82
+station_name=Old Fulton St; pagerank=0.82
+station_name=Pershing Square South; pagerank=0.82
+station_name=University Pl & E 8 St; pagerank=0.82
+station_name=W 20 St & 8 Ave; pagerank=0.82
+station_name=W 24 St & 7 Ave; pagerank=0.82
+station_name=W 34 St & 11 Ave; pagerank=0.82
+station_name=W 38 St & 8 Ave; pagerank=0.82
+station_name=W 42 St & 8 Ave; pagerank=0.82
+station_name=W 44 St & 5 Ave; pagerank=0.82
+station_name=W 52 St & 5 Ave; pagerank=0.82
+station_name=8 Ave & W 52 St; pagerank=0.81
+station_name=E 53 St & 3 Ave; pagerank=0.81
+station_name=Maiden Ln & Pearl St; pagerank=0.81
+station_name=Union Ave & N 12 St; pagerank=0.81
+station_name=1 Ave & E 16 St; pagerank=0.8
+station_name=1 Ave & E 62 St; pagerank=0.8
+station_name=11 Ave & W 59 St; pagerank=0.8
+station_name=Broadway & Berry St; pagerank=0.8
+station_name=Canal St & Rutgers St; pagerank=0.8
+station_name=Duffield St & Willoughby St; pagerank=0.8
+station_name=E 20 St & FDR Drive; pagerank=0.8
+station_name=E 43 St & 2 Ave; pagerank=0.8
+station_name=E 45 St & 3 Ave; pagerank=0.8
+station_name=E 47 St & 1 Ave; pagerank=0.8
+station_name=E 72 St & York Ave; pagerank=0.8
+station_name=Grand St & Havemeyer St; pagerank=0.8
+station_name=Milton St & Franklin St; pagerank=0.8
+station_name=Reade St & Broadway; pagerank=0.8
+station_name=Avenue C & E 18 St; pagerank=0.79
+station_name=Broadway & W 56 St; pagerank=0.79
+station_name=Central Park S & 6 Ave; pagerank=0.79
+station_name=Cliff St & Fulton St; pagerank=0.79
+station_name=E 24 St & Park Ave S; pagerank=0.79
+station_name=Fulton St & William St; pagerank=0.79
+station_name=W 18 St & 9 Ave; pagerank=0.79
+station_name=W 31 St & 7 Ave; pagerank=0.79
+station_name=W 41 St & 8 Ave; pagerank=0.79
+station_name=W 49 St & 8 Ave; pagerank=0.79
+station_name=W 52 St & 11 Ave; pagerank=0.79
+station_name=Washington Pl & Broadway; pagerank=0.79
+station_name=11 Ave & W 27 St; pagerank=0.78
+station_name=E 10 St & 5 Ave; pagerank=0.78
+station_name=E 20 St & 2 Ave; pagerank=0.78
+station_name=E 41 St & Madison Ave; pagerank=0.78
+station_name=E 43 St & 5 Ave; pagerank=0.78
+station_name=E 48 St & 3 Ave; pagerank=0.78
+station_name=E 58 St & 1 Ave (NE Corner); pagerank=0.78
+station_name=Greenwich Ave & Charles St; pagerank=0.78
+station_name=Henry St & Grand St; pagerank=0.78
+station_name=Perry St & Bleecker St; pagerank=0.78
+station_name=W 16 St & 8 Ave; pagerank=0.78
+station_name=W 17 St & 8 Ave; pagerank=0.78
+station_name=W 20 St & 7 Ave; pagerank=0.78
+station_name=W 26 St & 10 Ave; pagerank=0.78
+station_name=W 27 St & 10 Ave; pagerank=0.78
+station_name=W 33 St & 7 Ave; pagerank=0.78
+station_name=W 45 St & 8 Ave; pagerank=0.78
+station_name=Watts St & Greenwich St; pagerank=0.78
+station_name=West Thames St; pagerank=0.78
+station_name=5 Ave & E 73 St; pagerank=0.77
+station_name=Bond St & Fulton St; pagerank=0.77
+station_name=Clinton St & Grand St; pagerank=0.77
+station_name=Court St & State St; pagerank=0.77
+station_name=E 53 St & Madison Ave; pagerank=0.77
+station_name=E 84 St & 1 Ave; pagerank=0.77
+station_name=Graham Ave & Grand St; pagerank=0.77
+station_name=Lafayette Ave & Fort Greene Pl; pagerank=0.77
+station_name=Lawrence St & Willoughby St; pagerank=0.77
+station_name=3 Ave & E 62 St; pagerank=0.76
+station_name=E 5 St & Avenue C; pagerank=0.76
+station_name=N 12 St & Bedford Ave; pagerank=0.76
+station_name=Amsterdam Ave & W 66 St; pagerank=0.75
+station_name=Broadway & W 51 St; pagerank=0.75
+station_name=Bus Slip & State St; pagerank=0.75
+station_name=Cadman Plaza West & Montague St; pagerank=0.75
+station_name=Central Park West & W 76 St; pagerank=0.75
+station_name=Dean St & 4 Ave; pagerank=0.75
+station_name=Duane St & Greenwich St; pagerank=0.75
+station_name=E 33 St & 5 Ave; pagerank=0.75
+station_name=E 74 St & 1 Ave; pagerank=0.75
+station_name=Nassau Ave & Russell St; pagerank=0.75
+station_name=Stagg St & Union Ave; pagerank=0.75
+station_name=W 53 St & 10 Ave; pagerank=0.75
+station_name=W 54 St & 9 Ave; pagerank=0.75
+station_name=W 59 St & 10 Ave; pagerank=0.75
+station_name=W 70 St & Amsterdam Ave; pagerank=0.75
+station_name=11 Ave & W 41 St; pagerank=0.74
+station_name=Bank St & Washington St; pagerank=0.74
+station_name=Bialystoker Pl & Delancey St; pagerank=0.74
+station_name=E 51 St & 1 Ave; pagerank=0.74
+station_name=North Moore St & Greenwich St; pagerank=0.74
+station_name=Amsterdam Ave & W 79 St; pagerank=0.73
+station_name=Bedford Ave & Nassau Ave; pagerank=0.73
+station_name=Graham Ave & Conselyea St; pagerank=0.73
+station_name=Pearl St & Anchorage Pl; pagerank=0.73
+station_name=Rivington St & Ridge St; pagerank=0.73
+station_name=S 4 St & Rodney St; pagerank=0.73
+station_name=Spruce St & Nassau St; pagerank=0.73
+station_name=W 95 St & Broadway; pagerank=0.73
+station_name=3 Ave & Schermerhorn St; pagerank=0.72
+station_name=Bergen St & Smith St; pagerank=0.72
+station_name=Douglass St & 3 Ave; pagerank=0.72
+station_name=E 84 St & Park Ave; pagerank=0.72
+station_name=N 11 St & Kent Ave; pagerank=0.72
+station_name=Schermerhorn St & Bond St; pagerank=0.72
+station_name=5 Ave & E 63 St; pagerank=0.71
+station_name=5 Ave & E 78 St; pagerank=0.71
+station_name=Amsterdam Ave & W 73 St; pagerank=0.71
+station_name=Central Park West & W 68 St; pagerank=0.71
+station_name=E 11 St & Avenue B; pagerank=0.71
+station_name=E 47 St & 2 Ave; pagerank=0.71
+station_name=E 55 St & 3 Ave; pagerank=0.71
+station_name=Hudson St & Reade St; pagerank=0.71
+station_name=Madison Ave & E 82 St; pagerank=0.71
+station_name=Riverside Blvd & W 67 St; pagerank=0.71
+station_name=Riverside Dr & W 72 St; pagerank=0.71
+station_name=W 35 St & Dyer Ave; pagerank=0.71
+station_name=W 37 St & 10 Ave; pagerank=0.71
+station_name=W 42 St & Dyer Ave; pagerank=0.71
+station_name=W 46 St & 11 Ave; pagerank=0.71
+station_name=W 47 St & 10 Ave; pagerank=0.71
+station_name=W 50 St & 9 Ave; pagerank=0.71
+station_name=W 56 St & 10 Ave; pagerank=0.71
+station_name=Carlton Ave & Flushing Ave; pagerank=0.7
+station_name=Carroll St & Bond St; pagerank=0.7
+station_name=Cumberland St & Lafayette Ave; pagerank=0.7
+station_name=Flushing Ave & Vanderbilt Ave; pagerank=0.7
+station_name=Leonard St & Maujer St; pagerank=0.7
+station_name=Atlantic Ave & Furman St; pagerank=0.69
+station_name=Columbus Ave & W 72 St; pagerank=0.69
+station_name=E 75 St & 3 Ave; pagerank=0.69
+station_name=St James Pl & Oliver St; pagerank=0.69
+station_name=7 Ave & Central Park South; pagerank=0.68
+station_name=Central Park West & W 85 St; pagerank=0.68
+station_name=Clinton St & Joralemon St; pagerank=0.68
+station_name=E 91 St & 2 Ave; pagerank=0.68
+station_name=Hicks St & Montague St; pagerank=0.68
+station_name=Pike St & E Broadway; pagerank=0.68
+station_name=Riverside Dr & W 78 St; pagerank=0.68
+station_name=W 82 St & Central Park West; pagerank=0.68
+station_name=1 Ave & E 94 St; pagerank=0.67
+station_name=Berkeley Pl & 7 Ave; pagerank=0.67
+station_name=E 55 St & 2 Ave; pagerank=0.67
+station_name=E 81 St & 2 Ave; pagerank=0.67
+station_name=E 84 St & 3 Ave; pagerank=0.67
+station_name=Fulton St & Grand Ave; pagerank=0.67
+station_name=Harrison St & Hudson St; pagerank=0.67
+station_name=Henry St & Atlantic Ave; pagerank=0.67
+station_name=Johnson St & Gold St; pagerank=0.67
+station_name=Kent Ave & S 11 St; pagerank=0.67
+station_name=Madison St & Montgomery St; pagerank=0.67
+station_name=Lexington Ave & E 63 St; pagerank=0.66
+station_name=Madison St & Clinton St; pagerank=0.66
+station_name=McGuinness Blvd & Eagle St; pagerank=0.66
+station_name=St James Pl & Pearl St; pagerank=0.66
+station_name=W 76 St & Columbus Ave; pagerank=0.66
+station_name=5 Ave & E 88 St; pagerank=0.65
+station_name=Catherine St & Monroe St; pagerank=0.65
+station_name=Central Park West & W 72 St; pagerank=0.65
+station_name=Clark St & Henry St; pagerank=0.65
+station_name=Columbia St & Rivington St; pagerank=0.65
+station_name=Concord St & Bridge St; pagerank=0.65
+station_name=Degraw St & Hoyt St; pagerank=0.65
+station_name=E 97 St & Madison Ave; pagerank=0.65
+station_name=Emerson Pl & Myrtle Ave; pagerank=0.65
+station_name=Myrtle Ave & Lewis Ave; pagerank=0.65
+station_name=Queens Plaza North & Crescent St; pagerank=0.65
+station_name=Stanton St & Mangin St; pagerank=0.65
+station_name=Union St & Nevins St; pagerank=0.65
+station_name=W 100 St & Broadway; pagerank=0.65
+station_name=W 63 St & Broadway; pagerank=0.65
+station_name=W 84 St & Broadway; pagerank=0.65
+station_name=Warren St & Court St; pagerank=0.65
+station_name=Washington Park; pagerank=0.65
+station_name=10 St & 5 Ave; pagerank=0.64
+station_name=6 Ave & W 33 St; pagerank=0.64
+station_name=Avenue D & E 12 St; pagerank=0.64
+station_name=Cathedral Pkwy & Broadway; pagerank=0.64
+station_name=E 60 St & York Ave; pagerank=0.64
+station_name=Front St & Gold St; pagerank=0.64
+station_name=Lafayette Ave & Classon Ave; pagerank=0.64
+station_name=Montrose Ave & Bushwick Ave; pagerank=0.64
+station_name=Pike St & Monroe St; pagerank=0.64
+station_name=Schermerhorn St & Court St; pagerank=0.64
+station_name=W 88 St & West End Ave; pagerank=0.64
+station_name=West End Ave & W 94 St; pagerank=0.64
+station_name=3 Ave & E 72 St; pagerank=0.63
+station_name=Columbus Ave & W 95 St; pagerank=0.63
+station_name=Henry St & Middagh St; pagerank=0.63
+station_name=Myrtle Ave & St Edwards St; pagerank=0.63
+station_name=Nassau St & Navy St; pagerank=0.63
+station_name=Roebling St & N 4 St; pagerank=0.63
+station_name=14 St & 5 Ave; pagerank=0.62
+station_name=3 Ave & E 71 St; pagerank=0.62
+station_name=Baltic St & 5 Ave; pagerank=0.62
+station_name=Bergen St & Flatbush Ave; pagerank=0.62
+station_name=Cadman Plaza E & Red Cross Pl; pagerank=0.62
+station_name=Carroll St & Smith St; pagerank=0.62
+station_name=Driggs Ave & N 9 St; pagerank=0.62
+station_name=Driggs Ave & N Henry St; pagerank=0.62
+station_name=E 66 St & Madison Ave; pagerank=0.62
+station_name=E 72 St & Park Ave; pagerank=0.62
+station_name=E 76 St & Park Ave; pagerank=0.62
+station_name=E 88 St & 1 Ave; pagerank=0.62
+station_name=E 89 St & 3 Ave; pagerank=0.62
+station_name=Greene Av & Myrtle Av; pagerank=0.62
+station_name=Hanson Pl & Ashland Pl; pagerank=0.62
+station_name=Henry St & Degraw St; pagerank=0.62
+station_name=Pacific St & Nevins St; pagerank=0.62
+station_name=Riverside Dr & W 104 St; pagerank=0.62
+station_name=Scholes St & Manhattan Ave; pagerank=0.62
+station_name=Smith St & 9 St; pagerank=0.62
+station_name=W 67 St & Broadway; pagerank=0.62
+station_name=West Drive & Prospect Park West; pagerank=0.62
+station_name=Willoughby St & Fleet St; pagerank=0.62
+station_name=10 Ave & W 28 St; pagerank=0.61
+station_name=Adelphi St & Myrtle Ave; pagerank=0.61
+station_name=Amsterdam Ave & W 82 St; pagerank=0.61
+station_name=Bedford Ave & Bergen St; pagerank=0.61
+station_name=Cliff St & Fulton St (Old); pagerank=0.61
+station_name=Dean St & Hoyt St; pagerank=0.61
+station_name=E 82 St & East End Ave; pagerank=0.61
+station_name=Franklin Ave & Myrtle Ave; pagerank=0.61
+station_name=Lexington Ave & Classon Ave; pagerank=0.61
+station_name=Market St & Cherry St; pagerank=0.61
+station_name=5 Ave & 3 St; pagerank=0.6
+station_name=E 78 St & 2 Ave; pagerank=0.6
+station_name=India St & Manhattan Ave; pagerank=0.6
+station_name=Laight St & Hudson St; pagerank=0.6
+station_name=Lewis Ave & Kosciuszko St; pagerank=0.6
+station_name=Meserole Ave & Manhattan Ave; pagerank=0.6
+station_name=Willoughby Ave & Hall St; pagerank=0.6
+station_name=Amsterdam Ave & W 125 St; pagerank=0.59
+station_name=Banker St & Meserole Ave; pagerank=0.59
+station_name=Bayard St & Leonard St; pagerank=0.59
+station_name=Boerum St & Broadway; pagerank=0.59
+station_name=Butler St & Court St; pagerank=0.59
+station_name=Central Ave & Starr Street; pagerank=0.59
+station_name=Clermont Ave & Lafayette Ave; pagerank=0.59
+station_name=Congress St & Clinton St; pagerank=0.59
+station_name=DeKalb Ave & Hudson Ave; pagerank=0.59
+station_name=Dean St & Franklin Ave; pagerank=0.59
+station_name=Degraw St & Smith St; pagerank=0.59
+station_name=E 65 St & 2 Ave; pagerank=0.59
+station_name=E 68 St & Madison Ave; pagerank=0.59
+station_name=E 77 St & 3 Ave; pagerank=0.59
+station_name=E 89 St & York Ave; pagerank=0.59
+station_name=East End Ave & E 86 St; pagerank=0.59
+station_name=Greenpoint Ave & Manhattan Ave; pagerank=0.59
+station_name=Pitt St & Stanton St; pagerank=0.59
+station_name=Union St & 4 Ave; pagerank=0.59
+station_name=Washington Ave & Greene Ave; pagerank=0.59
+station_name=10 St & 7 Ave; pagerank=0.58
+station_name=2 Ave & E 72 St; pagerank=0.58
+station_name=Carlton Ave & Dean St; pagerank=0.58
+station_name=Carroll St & 6 Ave; pagerank=0.58
+station_name=E 81 St & 3 Ave; pagerank=0.58
+station_name=Kane St & Clinton St; pagerank=0.58
+station_name=Prospect Pl & 6 Ave; pagerank=0.58
+station_name=W 106 St & Central Park West; pagerank=0.58
+station_name=W 74 St & Columbus Ave; pagerank=0.58
+station_name=W 78 St & Broadway; pagerank=0.58
+station_name=W 84 St & Columbus Ave; pagerank=0.58
+station_name=W 89 St & Columbus Ave; pagerank=0.58
+station_name=Bergen St & Vanderbilt Ave; pagerank=0.57
+station_name=Cadman Plaza E & Johnson St; pagerank=0.57
+station_name=Central Ave & Flushing Ave; pagerank=0.57
+station_name=Clinton Ave & Flushing Ave; pagerank=0.57
+station_name=DeKalb Ave & S Portland Ave; pagerank=0.57
+station_name=Fulton St & Waverly Ave; pagerank=0.57
+station_name=Carroll St & 5 Ave; pagerank=0.56
+station_name=Central Park North & Adam Clayton Powell Blvd; pagerank=0.56
+station_name=E 67 St & Park Ave; pagerank=0.56
+station_name=Fulton St & Rockwell Pl; pagerank=0.56
+station_name=Graham Ave & Withers St; pagerank=0.56
+station_name=Leonard St & Boerum St; pagerank=0.56
+station_name=Lewis Ave & Madison St; pagerank=0.56
+station_name=McKibbin St & Bogart St; pagerank=0.56
+station_name=St. Nicholas Ave & W 126 St; pagerank=0.56
+station_name=Avenue D & E 8 St; pagerank=0.55
+station_name=Clermont Ave & Park Ave; pagerank=0.55
+station_name=DeKalb Ave & Vanderbilt Ave; pagerank=0.55
+station_name=Division Av & Hooper St; pagerank=0.55
+station_name=E 102 St & 1 Ave; pagerank=0.55
+station_name=E 68 St & 3 Ave; pagerank=0.55
+station_name=E 88 St & Park Ave; pagerank=0.55
+station_name=Monroe St & Bedford Ave; pagerank=0.55
+station_name=Nassau Ave & Newell St; pagerank=0.55
+station_name=Richardson St & N Henry St; pagerank=0.55
+station_name=W 116 St & Broadway; pagerank=0.55
+station_name=Willoughby Ave & Tompkins Ave; pagerank=0.55
+station_name=7 St & 5 Ave; pagerank=0.54
+station_name=Eastern Pkwy & Franklin Ave; pagerank=0.54
+station_name=Kosciuszko St & Tompkins Ave; pagerank=0.54
+station_name=Lincoln Pl & Classon Ave; pagerank=0.54
+station_name=Marcy Ave & Lafayette Ave; pagerank=0.54
+station_name=Plaza St West & Flatbush Ave; pagerank=0.54
+station_name=Willoughby Ave & Walworth St; pagerank=0.54
+station_name=Wyckoff St & 3 Ave; pagerank=0.54
+station_name=Center Blvd & 51 Ave; pagerank=0.53
+station_name=DeKalb Ave & Franklin Ave; pagerank=0.53
+station_name=Huron St & Franklin St; pagerank=0.53
+station_name=Pierrepont St & Monroe Pl; pagerank=0.53
+station_name=Prospect Pl & Underhill Ave; pagerank=0.53
+station_name=Suydam St & Knickerbocker Ave; pagerank=0.53
+station_name=5 Ave & E 103 St; pagerank=0.52
+station_name=7 Ave & Park Pl; pagerank=0.52
+station_name=Berkeley Pl & 6 Ave; pagerank=0.52
+station_name=Cambridge Pl & Gates Ave; pagerank=0.52
+station_name=Central Park W & W 96 St; pagerank=0.52
+station_name=Devoe St & Lorimer St; pagerank=0.52
+station_name=Douglass St & 4 Ave; pagerank=0.52
+station_name=E 85 St & York Ave; pagerank=0.52
+station_name=Franklin St & Dupont St; pagerank=0.52
+station_name=Frederick Douglass Blvd & W 112 St; pagerank=0.52
+station_name=Garfield Pl & 8 Ave; pagerank=0.52
+station_name=Grand Ave & Bergen St; pagerank=0.52
+station_name=Lafayette Ave & St James Pl; pagerank=0.52
+station_name=N 15 St & Wythe Ave; pagerank=0.52
+station_name=Park Pl & Franklin Ave; pagerank=0.52
+station_name=Pulaski St & Marcus Garvey Blvd; pagerank=0.52
+station_name=Tompkins Ave & Hopkins St; pagerank=0.52
+station_name=Underhill Ave & Lincoln Pl; pagerank=0.52
+station_name=W 87 St & Amsterdam Ave; pagerank=0.52
+station_name=W 92 St & Broadway; pagerank=0.52
+station_name=10 Hudson Yards; pagerank=0.51
+station_name=12 St & 4 Ave; pagerank=0.51
+station_name=3 St & 3 Ave; pagerank=0.51
+station_name=3 St & Hoyt St; pagerank=0.51
+station_name=6 St & 7 Ave; pagerank=0.51
+station_name=Fulton St & Utica Ave; pagerank=0.51
+station_name=Greene Ave & Throop Ave; pagerank=0.51
+station_name=Riverside Dr & W 91 St; pagerank=0.51
+station_name=W 100 St & Manhattan Ave; pagerank=0.51
+station_name=45 Rd & 11 St; pagerank=0.5
+station_name=Bedford Ave & S 9 St; pagerank=0.5
+station_name=Bushwick Ave & Powers St; pagerank=0.5
+station_name=Washington Ave & Park Ave; pagerank=0.5
+station_name=2 Ave & E 96 St; pagerank=0.49
+station_name=3 Ave & Carroll St; pagerank=0.49
+station_name=3 St & Prospect Park West; pagerank=0.49
+station_name=31 St & Northern Blvd; pagerank=0.49
+station_name=47 Ave & 31 St; pagerank=0.49
+station_name=7 St & 3 Ave; pagerank=0.49
+station_name=Bond St & Bergen St; pagerank=0.49
+station_name=Broadway & W 36 St; pagerank=0.49
+station_name=Central Park West & W 100 St; pagerank=0.49
+station_name=Columbia St & Kane St; pagerank=0.49
+station_name=E 110 St & Madison Ave; pagerank=0.49
+station_name=E 91 St & Park Ave; pagerank=0.49
+station_name=Fulton St & Clermont Ave; pagerank=0.49
+station_name=George St & Wilson Ave; pagerank=0.49
+station_name=Grand Army Plaza & Plaza St West; pagerank=0.49
+station_name=Greene Ave & Nostrand Ave; pagerank=0.49
+station_name=Lenox Ave & W 111 St; pagerank=0.49
+station_name=Monroe St & Tompkins Ave; pagerank=0.49
+station_name=Newton Rd & 44 St; pagerank=0.49
+station_name=Park Pl & Vanderbilt Ave; pagerank=0.49
+station_name=Prospect Park West & 8 St; pagerank=0.49
+station_name=Rogers Ave & Sterling St; pagerank=0.49
+station_name=St Johns Pl & Washington Ave; pagerank=0.49
+station_name=Sterling Pl & Bedford Ave; pagerank=0.49
+station_name=Union St & Bedford Ave; pagerank=0.49
+station_name=Van Brunt St & Van Dyke St; pagerank=0.49
+station_name=28 St & 41 Ave; pagerank=0.48
+station_name=44 Dr & 21 St; pagerank=0.48
+station_name=46 Ave & 5 St; pagerank=0.48
+station_name=6 Ave & 12 St; pagerank=0.48
+station_name=Broadway & Moylan Pl; pagerank=0.48
+station_name=Brooklyn Bridge Park - Pier 2; pagerank=0.48
+station_name=Carlton Ave & Park Ave; pagerank=0.48
+station_name=Carroll St & Columbia St; pagerank=0.48
+station_name=Columbia St & Degraw St; pagerank=0.48
+station_name=Eckford St & Engert Ave; pagerank=0.48
+station_name=Franklin Ave & Empire Blvd; pagerank=0.48
+station_name=Kosciuszko St & Nostrand Ave; pagerank=0.48
+station_name=Leonard St & Nassau Ave; pagerank=0.48
+station_name=Myrtle Ave & Marcy Ave; pagerank=0.48
+station_name=Pioneer St & Van Brunt St; pagerank=0.48
+station_name=President St & Henry St; pagerank=0.48
+station_name=S Portland Ave & Hanson Pl; pagerank=0.48
+station_name=W 104 St & Amsterdam Ave; pagerank=0.48
+station_name=W 106 St & Amsterdam Ave; pagerank=0.48
+station_name=W 110 St & Amsterdam Ave; pagerank=0.48
+station_name=West End Ave & W 107 St; pagerank=0.48
+station_name=White St & Moore St; pagerank=0.48
+station_name=27 St & Hunter St; pagerank=0.47
+station_name=5 St & 6 Ave; pagerank=0.47
+station_name=Powers St & Olive St; pagerank=0.47
+station_name=St Nicholas Ave & Manhattan Ave; pagerank=0.47
+station_name=14 St & 7 Ave; pagerank=0.46
+station_name=E 93 St & 2 Ave; pagerank=0.46
+station_name=E 97 St & 3 Ave; pagerank=0.46
+station_name=Eastern Pkwy & Washington Ave; pagerank=0.46
+station_name=Franklin Ave & St Marks Ave; pagerank=0.46
+station_name=Hancock St & Bedford Ave; pagerank=0.46
+station_name=Kingston Ave & Herkimer St; pagerank=0.46
+station_name=Macon St & Nostrand Ave; pagerank=0.46
+station_name=Madison Ave & E 99 St; pagerank=0.46
+station_name=Metropolitan Ave & Meeker Ave; pagerank=0.46
+station_name=Park Ave & St Edwards St; pagerank=0.46
+station_name=Union Ave & Jackson St; pagerank=0.46
+station_name=W 55 St & 6 Ave; pagerank=0.46
+station_name=3 Ave & E 95 St; pagerank=0.45
+station_name=31 Ave & 30 St; pagerank=0.45
+station_name=31 St & Newtown Ave; pagerank=0.45
+station_name=31 St & Thomson Ave; pagerank=0.45
+station_name=48 Ave & 30 Pl; pagerank=0.45
+station_name=5 Ave & E 93 St; pagerank=0.45
+station_name=Atlantic Ave & Fort Greene Pl; pagerank=0.45
+station_name=E 109 St & 3 Ave; pagerank=0.45
+station_name=E 81 St & Park Ave; pagerank=0.45
+station_name=Halsey St & Tompkins Ave; pagerank=0.45
+station_name=India St & West St; pagerank=0.45
+station_name=Irving Ave & Jefferson St; pagerank=0.45
+station_name=Lenox Ave & W 126 St; pagerank=0.45
+station_name=Lenox Ave & W 130 St; pagerank=0.45
+station_name=Mt Morris Park W & W 120 St; pagerank=0.45
+station_name=Park Ave & Marcus Garvey Blvd; pagerank=0.45
+station_name=Sharon St & Olive St; pagerank=0.45
+station_name=Vernon Blvd & 47 Rd; pagerank=0.45
+station_name=W 107 St & Columbus Ave; pagerank=0.45
+station_name=W 120 St & Claremont Ave; pagerank=0.45
+station_name=W 90 St & Amsterdam Ave; pagerank=0.45
+station_name=Wyckoff St & Bond St; pagerank=0.45
+station_name=6 Ave & 9 St; pagerank=0.44
+station_name=Columbia Heights & Cranberry St; pagerank=0.44
+station_name=Dock 72 Way & Market St; pagerank=0.44
+station_name=Hart St & Wyckoff Ave; pagerank=0.44
+station_name=Nostrand Ave & Myrtle Ave; pagerank=0.44
+station_name=Smith St & 3 St; pagerank=0.44
+station_name=Stockholm St & Wilson Ave; pagerank=0.44
+station_name=Broadway & Whipple St; pagerank=0.43
+station_name=Carroll St & Washington Ave; pagerank=0.43
+station_name=Crown St & Bedford Ave; pagerank=0.43
+station_name=Lefferts Pl & Franklin Ave; pagerank=0.43
+station_name=Lorimer St & Broadway; pagerank=0.43
+station_name=Marcus Garvey Blvd & Macon St; pagerank=0.43
+station_name=Putnam Ave & Throop Ave; pagerank=0.43
+station_name=Union Ave & Wallabout St; pagerank=0.43
+station_name=3 Ave & 14 St; pagerank=0.42
+station_name=35 Ave & 37 St; pagerank=0.42
+station_name=44 Dr & Jackson Ave; pagerank=0.42
+station_name=Adam Clayton Powell Blvd & W 126 St; pagerank=0.42
+station_name=Cedar St & Myrtle Ave; pagerank=0.42
+station_name=Central Park West & W 102 St; pagerank=0.42
+station_name=E 103 St & Lexington Ave; pagerank=0.42
+station_name=Frederick Douglass Blvd & W 117 St; pagerank=0.42
+station_name=Lenox Ave & W 115 St; pagerank=0.42
+station_name=Park Ave & E 124 St; pagerank=0.42
+station_name=Verona Pl & Fulton St; pagerank=0.42
+station_name=1 Pl & Clinton St; pagerank=0.41
+station_name=2 Ave & 36 St - Citi Bike HQ at Industry City; pagerank=0.41
+station_name=2 Ave & E 122 St; pagerank=0.41
+station_name=28 Ave & 35 St; pagerank=0.41
+station_name=28 St & 38 Ave; pagerank=0.41
+station_name=37 Ave & 35 St; pagerank=0.41
+station_name=4 Ave & 9 St; pagerank=0.41
+station_name=Clinton St & 4 Place; pagerank=0.41
+station_name=Court St & Nelson St; pagerank=0.41
+station_name=Crescent St & Broadway; pagerank=0.41
+station_name=Humboldt St & Varet St; pagerank=0.41
+station_name=Knickerbocker Ave & Thames St; pagerank=0.41
+station_name=W 129 St & Convent Ave; pagerank=0.41
+station_name=Wyckoff Av & Jefferson St; pagerank=0.41
+station_name=McKibbin St & Manhattan Ave; pagerank=0.4
+station_name=Willoughby Ave & Wyckoff Ave; pagerank=0.4
+station_name=1 Ave & E 110 St; pagerank=0.39
+station_name=2 Ave & E 104 St; pagerank=0.39
+station_name=2 Ave & E 99 St; pagerank=0.39
+station_name=Adam Clayton Powell Blvd & W 118 St; pagerank=0.39
+station_name=Carroll St & Franklin Ave; pagerank=0.39
+station_name=Frederick Douglass Blvd & W 115 St; pagerank=0.39
+station_name=Jackson St & Leonard St; pagerank=0.39
+station_name=Montgomery St & Franklin Ave; pagerank=0.39
+station_name=21 St & 43 Ave; pagerank=0.38
+station_name=31 Ave & 34 St; pagerank=0.38
+station_name=34 Ave & 38 St; pagerank=0.38
+station_name=36 Ave & 31 St; pagerank=0.38
+station_name=Broadway & W 122 St; pagerank=0.38
+station_name=Coffey St & Conover St; pagerank=0.38
+station_name=Driggs Ave & Lorimer St; pagerank=0.38
+station_name=E 106 St & Madison Ave; pagerank=0.38
+station_name=Graham Ave & Herbert St; pagerank=0.38
+station_name=Monroe St & Classon Ave; pagerank=0.38
+station_name=Pacific St & Classon Ave; pagerank=0.38
+station_name=Stuyvesant Walk & 1 Av Loop; pagerank=0.38
+station_name=Sullivan Pl & Bedford Ave; pagerank=0.38
+station_name=Throop Ave & Myrtle Ave; pagerank=0.38
+station_name=W 113 St & Broadway; pagerank=0.38
+station_name=28 St & 36 Ave; pagerank=0.37
+station_name=Bushwick Ave & McKibbin St; pagerank=0.37
+station_name=Clinton St & Union St; pagerank=0.37
+station_name=Division Ave & Marcy Ave; pagerank=0.37
+station_name=E 118 St & 1 Ave; pagerank=0.36
+station_name=E 98 St & Park Ave; pagerank=0.36
+station_name=Lexington Ave & E 127 St; pagerank=0.36
+station_name=Sigourney St & Columbia St; pagerank=0.36
+station_name=31 St & Broadway; pagerank=0.35
+station_name=34 St & 35 Ave; pagerank=0.35
+station_name=36 Ave & 10 St; pagerank=0.35
+station_name=49 Ave & 21 St; pagerank=0.35
+station_name=Albany Ave & Fulton St; pagerank=0.35
+station_name=Amsterdam Ave & W 119 St; pagerank=0.35
+station_name=Broadway & 12 St; pagerank=0.35
+station_name=Broadway & W 32 St; pagerank=0.35
+station_name=Center Blvd & 48 Ave; pagerank=0.35
+station_name=Columbus Ave & W 103 St; pagerank=0.35
+station_name=Crescent St & 35 Ave; pagerank=0.35
+station_name=E 116 St & 2 Ave; pagerank=0.35
+station_name=E 128 St & Madison Ave; pagerank=0.35
+station_name=Frederick Douglass Blvd & W 129 St; pagerank=0.35
+station_name=Jackson Ave & 46 Rd; pagerank=0.35
+station_name=Lewis Ave & Decatur St; pagerank=0.35
+station_name=Putnam Ave & Nostrand Ave; pagerank=0.35
+station_name=W 116 St & Amsterdam Ave; pagerank=0.35
+station_name=White St & Johnson Ave; pagerank=0.35
+station_name=31 St & 23 Ave; pagerank=0.34
+station_name=31 St & Astoria Blvd; pagerank=0.34
+station_name=Clinton St & Centre St; pagerank=0.34
+station_name=Van Brunt St & Wolcott St; pagerank=0.34
+station_name=Irving Ave & DeKalb Ave; pagerank=0.33
+station_name=Steinway St & 28 Ave; pagerank=0.33
+station_name=21 St & 36 Ave; pagerank=0.32
+station_name=3 Ave & E 100 St; pagerank=0.32
+station_name=Adam Clayton Powell Blvd & W 115 St; pagerank=0.32
+station_name=Adam Clayton Powell Blvd & W 123 St; pagerank=0.32
+station_name=E 102 St & Park Ave; pagerank=0.32
+station_name=E 106 St & Lexington Ave; pagerank=0.32
+station_name=E 114 St & 1 Ave; pagerank=0.32
+station_name=E 115 St & Lexington Ave; pagerank=0.32
+station_name=E 58 St & Madison Ave; pagerank=0.32
+station_name=Lexington Ave & E 111 St; pagerank=0.32
+station_name=Morningside Ave & W 123 St; pagerank=0.32
+station_name=Pleasant Ave & E 116 St; pagerank=0.32
+station_name=2 Ave & 9 St; pagerank=0.31
+station_name=24 St & 41 Ave; pagerank=0.31
+station_name=30 Ave & 21 St; pagerank=0.31
+station_name=31 Ave & Crescent St; pagerank=0.31
+station_name=35 St & 34 Ave; pagerank=0.31
+station_name=39 St & 2 Ave - Citi Bike HQ at Industry City; pagerank=0.31
+station_name=43 St & Broadway; pagerank=0.31
+station_name=47 Ave & Skillman Ave; pagerank=0.31
+station_name=Columbia St & W 9 St; pagerank=0.31
+station_name=Crescent St & Ditmars Blvd; pagerank=0.31
+station_name=Frost St & Meeker Ave; pagerank=0.31
+station_name=Stagg St & Morgan Ave; pagerank=0.31
+station_name=Steinway St & 23 Ave; pagerank=0.31
+station_name=Sterling St & Bedford Ave; pagerank=0.31
+station_name=Vernon Blvd & 10 St; pagerank=0.31
+station_name=Vernon Blvd & 41 Rd; pagerank=0.31
+station_name=Waterbury St & Stagg St; pagerank=0.31
+station_name=21 St & 31 Dr; pagerank=0.3
+station_name=21 St & 38 Ave; pagerank=0.3
+station_name=21 St & Queens Plaza North; pagerank=0.3
+station_name=31 Ave & Steinway St; pagerank=0.3
+station_name=31 St & Hoyt Ave N; pagerank=0.3
+station_name=35 Ave & 10 St; pagerank=0.3
+station_name=9 St & 44 Rd; pagerank=0.3
+station_name=Wolcott St & Dwight St; pagerank=0.3
+station_name=Crescent St & 30 Ave; pagerank=0.29
+station_name=E 115 St & Madison Ave; pagerank=0.29
+station_name=E 118 St & 3 Ave; pagerank=0.29
+station_name=E 118 St & Park Ave; pagerank=0.29
+station_name=E 123 St & Lexington Ave; pagerank=0.29
+station_name=Lenox Ave & W 117 St; pagerank=0.29
+station_name=34 Ave & 13 St; pagerank=0.28
+station_name=34 Ave & 21 St; pagerank=0.28
+station_name=5 Ave & E 126 St; pagerank=0.28
+station_name=Morningside Dr & Amsterdam Ave; pagerank=0.28
+station_name=11 St & 43 Ave; pagerank=0.27
+station_name=24 Ave & 29 St; pagerank=0.27
+station_name=5 St & 51 Ave; pagerank=0.27
+station_name=5 St & Market St; pagerank=0.27
+station_name=Columbia St & Lorraine St; pagerank=0.27
+station_name=Commerce St & Van Brunt St; pagerank=0.27
+station_name=Devoe St & Morgan Ave; pagerank=0.27
+station_name=Ditmars Blvd & 19 St; pagerank=0.27
+station_name=Dwight St & Van Dyke St; pagerank=0.27
+station_name=Henry St & W 9 St; pagerank=0.27
+station_name=Newtown Ave & 23 St; pagerank=0.27
+station_name=Pioneer St & Richards St; pagerank=0.27
+station_name=Railroad Ave & Kay Ave; pagerank=0.27
+station_name=3 Ave & E 112 St; pagerank=0.26
+station_name=Bushwick Ave & Stagg St; pagerank=0.26
+station_name=E 106 St & 1 Ave; pagerank=0.26
+station_name=Pleasant Ave & E 120 St; pagerank=0.26
+station_name=Crescent St & 34 Ave; pagerank=0.25
+station_name=E 118 St & Madison Ave; pagerank=0.25
+station_name=Madison Ave & E 120 St; pagerank=0.25
+station_name=Soissons Landing; pagerank=0.25
+station_name=35 St & Broadway; pagerank=0.24
+station_name=40 Ave & Crescent St; pagerank=0.24
+station_name=48 Ave & 5 St; pagerank=0.24
+station_name=Vernon Blvd & 31 Ave; pagerank=0.24
+station_name=10 St & 2 Ave; pagerank=0.23
+station_name=27 Ave & 9 St; pagerank=0.23
+station_name=Henry St & Bay St; pagerank=0.23
+station_name=Henry St & Poplar St; pagerank=0.23
+station_name=Knickerbocker Ave & George St; pagerank=0.23
+station_name=Richards St & Delavan St; pagerank=0.23
+station_name=Vernon Blvd & 30 Rd; pagerank=0.23
+station_name=21 St & Hoyt Ave S; pagerank=0.22
+station_name=23 Ave & 27 St; pagerank=0.22
+station_name=11 St & 35 Ave; pagerank=0.2
+station_name=27 Ave & 4 St; pagerank=0.2
+station_name=31 Ave & 14 St; pagerank=0.2
+station_name=40 Ave & 9 St; pagerank=0.2
+station_name=Astoria Park S & Shore Blvd; pagerank=0.2
+station_name=Lexington Ave & E 120 St; pagerank=0.19
+station_name=19 St & 24 Ave; pagerank=0.18
+station_name=37 St & 24 Ave; pagerank=0.18
+station_name=NYCBS Depot - GOW; pagerank=0.18
+station_name=9 Ave & W 22 St; pagerank=0.15
