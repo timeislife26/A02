@@ -63,16 +63,11 @@ def my_main(spark, my_dataset_dir):
     df.persist()
     df = df.orderBy(["stop_station_name"])
     df1 = df.groupBy("start_station_name").agg({"start_station_name" : "count"})
-    #df1 = df1.withColumnRenamed("count(start_station_name)", "num_departure_trips")
-    #df1 = df.groupBy("start_station_name").agg(pyspark.sql.functions.count("start_station_name").alias("num_departure_trips"))
+
     df1.persist()
-    #df1 = df1.withColumnRenamed("start_station_name", "station")
 
     df2 = df.groupBy("stop_station_name").agg({"stop_station_name" : "count"})
-    #df2 = df2.withColumnRenamed("count(stop_station_name)", "num_arrival_trips")
-    #df2 = df.groupBy("stop_station_name").agg(pyspark.sql.functions.count("stop_station_name").alias("num_arrival_trips"))
     df2.persist()
-    #df2 = df2.withColumnRenamed("stop_station_name", "station")
 
 
 
@@ -80,14 +75,11 @@ def my_main(spark, my_dataset_dir):
 
     joinedDF = df1.join(df2, df1["start_station_name"] == df2["stop_station_name"], "full_outer")
     depatureDf = joinedDF.withColumn("station", pyspark.sql.functions.when(joinedDF["start_station_name"].isNull(), joinedDF["stop_station_name"]).otherwise(joinedDF["start_station_name"]))
-    #depatureDf = depatureDf.withColumn("num_departure_trips", pyspark.sql.functions.when(depatureDf["count(start_station_name)"].isNull(), depatureDf["stop_station_name"]).otherwise(depatureDf["start_station_name"]))
     depatureDf = depatureDf.na.fill(0)
     depatureDf = depatureDf.orderBy(pyspark.sql.functions.col("station").asc())
     depatureDf = depatureDf.withColumnRenamed("count(stop_station_name)", "num_arrival_trips")
     depatureDf = depatureDf.withColumnRenamed("count(start_station_name)", "num_departure_trips")
     solutionDF = depatureDf.select("station", "num_departure_trips", "num_arrival_trips")
-
-    #solutionDF = joinedDF.orderBy(pyspark.sql.functions.col("station").asc())
 
 
     # --------------------------------------------------------

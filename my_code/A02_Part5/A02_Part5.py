@@ -61,6 +61,17 @@ def my_spark_part_compute_graph(spark, my_dataset_dir):
     # --------------------------------------------------------
     # START OF STUDENT CODE
     # --------------------------------------------------------
+    df = inputDF.select("start_station_name", "stop_station_name")
+    df = df.dropDuplicates(["start_station_name", "stop_station_name"])
+    groupedDF = df.groupBy("start_station_name").agg({"stop_station_name" : "collect_list"})
+    countDF = df.groupBy("start_station_name").agg({"start_station_name" : "count"})
+    countDF = countDF.withColumnRenamed("start_station_name", "count_Station")
+    joinedDF = groupedDF.join(countDF, groupedDF["start_station_name"] == countDF["count_Station"])
+    joinedDF = joinedDF.drop("count_Station")
+    joinedDF = joinedDF.orderBy("start_station_name")
+    solutionDF = joinedDF.withColumnRenamed("collect_list(stop_station_name)", "neighbours")
+    solutionDF = solutionDF.withColumnRenamed("count(start_station_name)", "num_neighbours")
+    #solutionDF.show()
 
 
 
@@ -96,7 +107,42 @@ def my_python_part_compute_page_rank(edges_per_node,
                                      reset_probability,
                                      max_iterations
                                     ):
-    pass
+    new_dict = {}
+    #for i in max_iterations:
+    '''for key in edges_per_node:
+        new_dict[key] = [0, []]
+    for key in new_dict:
+        value = edges_per_node[key][1]
+        send_message = 1/edges_per_node[key][0]
+        for item in value:
+            new_dict[item][1].append(send_message)
+    for key in new_dict:
+        new_dict[key][0] = sum(new_dict[key][1])
+    print(new_dict)'''
+    for i in range(max_iterations): # Goes through each iteration
+        for key in edges_per_node: # Goes through each starting station
+            if i == 0:
+                new_dict[key] = [1.0,[],0] # intializes the dict if first iteration
+            else:
+                new_dict[key][1] = [] # Removes incoming values if not first iteration
+        for key in edges_per_node:# Goes through each starting station
+            new_dict[key][2] = new_dict[key][0] / edges_per_node[key][0] # Calaculate the value to send out
+        for key in edges_per_node: # Goes through each starting station
+            for item in edges_per_node[key][1]: #Gets all the stations it the current station goes to
+                if item in new_dict:
+                    new_dict[key][1].append(new_dict[item][2]) # Adds that stations send value to the incoming values array of current station
+                else:
+                    new_dict[key][1].append(1)
+        for key in edges_per_node: # Goes through each starting station
+            new_dict[key][0] = reset_probability + (1-reset_probability) * sum(new_dict[key][1]) # sets the page rank for each station
+
+    sorted_dict = dict(sorted(new_dict.items(), key=lambda item: item[1][0], reverse=True))
+    for key in sorted_dict:
+        print("station_name=" + key + "; pagerank=" + str(new_dict[key][0]))
+
+
+
+
 
 
 # ------------------------------------------
@@ -138,7 +184,7 @@ if __name__ == '__main__':
     max_iterations = 10
 
     # 2. We select the Spark execution mode: Local (0), Google Colab (1) or Databricks (2)
-    local_0_GoogleColab_1_databricks_2 = 0
+    local_0_GoogleColab_1_databricks_2 = 2
 
     if (local_0_GoogleColab_1_databricks_2 == 1):
         import google.colab
