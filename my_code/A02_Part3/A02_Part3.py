@@ -57,7 +57,22 @@ def my_main(spark, my_dataset_dir, bike_id):
     # --------------------------------------------------------
     # START OF STUDENT CODE
     # --------------------------------------------------------
-
+    df = inputDF.filter(pyspark.sql.functions.col("bike_id") == bike_id)
+    #df = df.select("start_time", "start_station_name", "stop_time", "stop_station_name")
+    #orderedDF = df.orderBy(pyspark.sql.functions.col("start_time"))
+    my_window = pyspark.sql.Window.partitionBy(df["bike_id"]).orderBy(pyspark.sql.functions.col("start_time"))
+    lagDF = df.withColumn("next_start_station", pyspark.sql.functions.lag(df["start_station_name"], -1, None).over(my_window))
+    lagDF = lagDF.withColumn("next_start_time", pyspark.sql.functions.lag(df["start_time"], -1, None).over(my_window))
+    #solutionDF = lagDF.select("start_time", "start_station_name", "stop_time", "stop_station_name", "next_start_station", "next_start_time")
+    MovedDF = lagDF.withColumn("Change",pyspark.sql.functions.when(lagDF["next_start_station"] != lagDF["stop_station_name"],True).otherwise(False))
+    #solutionDF = solutionDF.select("start_time", "stop_time", "stop_station_name", "next_start_station", "next_start_time", "Change")
+    filteredDF = MovedDF.filter(pyspark.sql.functions.col("Change") == "True")
+    filteredDF = filteredDF.select("stop_time", "stop_station_name", "next_start_station", "next_start_time")
+    filteredDF = filteredDF.withColumnRenamed("stop_time", "start_time")
+    filteredDF = filteredDF.withColumnRenamed("stop_station_name", "start_station_name")
+    filteredDF = filteredDF.withColumnRenamed("next_start_station", "stop_station_name")
+    filteredDF = filteredDF.withColumnRenamed("next_start_time", "stop_time")
+    solutionDF = filteredDF.select("start_time", "start_station_name", "stop_time", "stop_station_name")
 
 
 
@@ -94,7 +109,7 @@ if __name__ == '__main__':
     bike_id = 35143
 
     # 2. We select the Spark execution mode: Local (0), Google Colab (1) or Databricks (2)
-    local_0_GoogleColab_1_databricks_2 = 0
+    local_0_GoogleColab_1_databricks_2 = 2
 
     if (local_0_GoogleColab_1_databricks_2 == 1):
         import google.colab
