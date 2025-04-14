@@ -50,20 +50,35 @@ def my_main(spark,
     # --------------------------------------------------------
 
     df = inputDF.withColumn("cost", pyspark.sql.functions.lit(-1))
-    df = df.withColumn("cost", pyspark.sql.functions.when(df["source"] == 1,0).otherwise(-1))
-    teamsDF = df.groupBy("source").agg({"source": "count"})
-    teamsDF = teamsDF.withColumn("team", pyspark.sql.functions.when(df["source"] == 1,"Red").otherwise("Blue")).select("source", "team").orderBy("source")
-    num_nodes = teamsDF.count()
-    teamsDF = teamsDF.withColumnRenamed("source", "temp_source")
-    joinedDf = df.join(teamsDF, df["source"] == teamsDF["temp_source"], "full_outer")
-    joinedDf = joinedDf.withColumnRenamed("team", "source_team")
-    joinedDf = joinedDf.drop("temp_source")
+    df = df.withColumn("path", pyspark.sql.functions.lit(""))
+    df = df.withColumn("cost", pyspark.sql.functions.when(pyspark.sql.functions.col("source") == source_node, 0).otherwise(-1))
+    df = df.withColumn("path", pyspark.sql.functions.when(pyspark.sql.functions.col("source") == source_node, str(source_node)).otherwise(""))
+    solutionDF = df.select("source").groupBy("source").agg({"source": "count"})
+    solutionDF = solutionDF.withColumn("cost", pyspark.sql.functions.when(pyspark.sql.functions.col("source") == source_node, 0).otherwise(-1))
+    solutionDF = solutionDF.withColumn("path", pyspark.sql.functions.when(pyspark.sql.functions.col("source") == source_node, str(source_node)).otherwise(""))
+    solutionDF = solutionDF.drop("count(source)").orderBy("source")
+    num_nodes = df.groupBy("source").agg({"source": "count"}).count()
+    for i in range(1, num_nodes):
+        tempdf = df.filter((pyspark.sql.functions.col("target") == i+1) & (pyspark.sql.functions.col("cost") >= 0))
+        minWeight = tempdf.agg({"weight": "min"}).collect()[0][0]
+        iterRes = tempdf.filter(pyspark.sql.functions.col("weight") == minWeight)
+        val = iterRes.collect()
+        previousSource = val[0][0]
+        weight = int(val[0][2])
+        previousNode = solutionDF.filter(pyspark.sql.functions.col("source") == previousSource).collect()
+        print("PreviousNode:")
+        print(previousNode)
+        prevCost = previousNode[0][1]
+        print("Prev Cost: " , prevCost)
+        print("weight: ", weight)
+        prevPath = previousNode[0][2]
+        solutionDF = solutionDF.withColumn("cost", pyspark.sql.functions.when(pyspark.sql.functions.col("source") == i+1, pyspark.sql.functions.lit(prevCost + weight)).otherwise(pyspark.sql.functions.col("cost")))
+        solutionDF = solutionDF.withColumn("path", pyspark.sql.functions.when(pyspark.sql.functions.col("source") == i+1, prevPath + "-" + str(i+1)).otherwise(pyspark.sql.functions.col("path")))
+        df = df.withColumn("cost", pyspark.sql.functions.when(pyspark.sql.functions.col("target") == i+1, pyspark.sql.functions.lit(-1)).otherwise(pyspark.sql.functions.col("cost")))
+        df.show()
+        #iterRes.show()
 
 
-    targetDf = joinedDf.join(teamsDF, teamsDF["temp_source"] == joinedDf["target"], "full_outer")#.select(joinedDf["source"], joinedDf["target"], joinedDf["source_team"], teamsDF["team"])
-    targetDf = targetDf.select("source", "target", "weight", "cost", "source_team", "team")
-    targetDf = targetDf.withColumnRenamed("team", "target_team").orderBy("source")
-    targetDf.show()
 
 
 
