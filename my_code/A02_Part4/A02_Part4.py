@@ -57,6 +57,25 @@ def my_main(spark, my_dataset_dir, loop_size):
     # --------------------------------------------------------
     # START OF STUDENT CODE
     # --------------------------------------------------------
+    df = inputDF.select("bike_id", "start_time", "stop_time", "start_station_name", "stop_station_name")
+    my_window = pyspark.sql.Window.partitionBy(df["bike_id"]).orderBy(pyspark.sql.functions.col("start_time")) # Groups the data by bike_id
+    for i in range(1,loop_size): #Create the Lag
+        df = df.withColumn("start_time"+"_"+str(i), pyspark.sql.functions.lag(df["start_time"], (i * -1), None).over(my_window))
+        df = df.withColumn("stop_time"+"_"+str(i), pyspark.sql.functions.lag(df["stop_time"], (i * -1), None).over(my_window))
+        df = df.withColumn("start_station_name"+"_"+str(i), pyspark.sql.functions.lag(df["start_station_name"], (i * -1), None).over(my_window))
+        df = df.withColumn("stop_station_name"+"_"+str(i), pyspark.sql.functions.lag(df["stop_station_name"], (i * -1), None).over(my_window))
+    df = df.filter(pyspark.sql.functions.col("start_station_name") == pyspark.sql.functions.col("stop_station_name_" + str(loop_size-1))) # Fitler out loops that don't end where it starts
+    df = df.withColumnRenamed("start_time", "start_time_"+"0")
+    df = df.withColumnRenamed("stop_time", "stop_time_"+"0")
+    df = df.withColumnRenamed("start_station_name", "start_station_name_"+"0")
+    df = df.withColumnRenamed("stop_station_name", "stop_station_name_"+"0")
+    for i in range(1,loop_size):
+        df = df.filter(pyspark.sql.functions.col("start_station_name_" + str(i)) == pyspark.sql.functions.col("stop_station_name_" + str(i - 1))) # checs that sarting station is the same as last station
+        for j in range(i, loop_size):
+            df = df.filter(pyspark.sql.functions.col("start_station_name_" + str(i-1)) != pyspark.sql.functions.col("start_station_name_" + str(j)))
+
+    solutionDF = df.orderBy("bike_id")
+
 
 
 
@@ -94,7 +113,7 @@ if __name__ == '__main__':
     loop_size = 5
 
     # 2. We select the Spark execution mode: Local (0), Google Colab (1) or Databricks (2)
-    local_0_GoogleColab_1_databricks_2 = 0
+    local_0_GoogleColab_1_databricks_2 = 2
 
     if (local_0_GoogleColab_1_databricks_2 == 1):
         import google.colab
