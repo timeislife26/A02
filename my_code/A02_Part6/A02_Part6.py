@@ -49,7 +49,39 @@ def my_main(spark,
     # START OF STUDENT CODE
     # --------------------------------------------------------
 
+    df = inputDF.withColumn("cost", pyspark.sql.functions.lit(-1))
+    df = df.withColumn("cost", pyspark.sql.functions.when(df["source"] == 1,0).otherwise(-1))
+    teamsDF = df.groupBy("source").agg({"source": "count"})
+    teamsDF = teamsDF.withColumn("team", pyspark.sql.functions.when(df["source"] == 1,"Red").otherwise("Blue")).select("source", "team").orderBy("source")
+    num_nodes = teamsDF.count()
+    teamsDF = teamsDF.withColumnRenamed("source", "temp_source")
+    joinedDf = df.join(teamsDF, df["source"] == teamsDF["temp_source"], "full_outer")
+    joinedDf = joinedDf.withColumnRenamed("team", "source_team")
+    joinedDf = joinedDf.drop("temp_source")
 
+
+    targetDf = joinedDf.join(teamsDF, teamsDF["temp_source"] == joinedDf["target"], "full_outer")#.select(joinedDf["source"], joinedDf["target"], joinedDf["source_team"], teamsDF["team"])
+    targetDf = targetDf.select("source", "target", "weight", "cost", "source_team", "team")
+    targetDf = targetDf.withColumnRenamed("team", "target_team").orderBy("source")
+    targetDf.show()
+
+
+
+    '''
+    for i in range(1, num_nodes):
+        minVal1 = targetDf.where((pyspark.sql.functions.col("source_team") == "Red") & (pyspark.sql.functions.col("target_team") != pyspark.sql.functions.col("source_team"))).agg({"weight": "min"})
+        minVal = minVal1.collect()
+        row = targetDf.where((pyspark.sql.functions.col("weight") == minVal[0][0]) & (pyspark.sql.functions.col("source_team") == "Red"))
+        row.show()
+        targetDf = targetDf.withColumn("source_team", pyspark.sql.functions.when((pyspark.sql.functions.col("source") == row["target"]) | (pyspark.sql.functions.col("source_team") == "Red"), "Red").otherwise("Blue"))
+        print(minVal)
+    targetDf.show()'''
+
+
+    '''
+    minVal1 = joinedDf.where(joinedDf["source"] == 5).agg({"weight": "min"})
+    minVal = minVal1.collect()
+    print(minVal[0][0])'''
 
 
 
@@ -85,7 +117,7 @@ if __name__ == '__main__':
     source_node = 1
 
     # 2. We select the Spark execution mode: Local (0), Google Colab (1) or Databricks (2)
-    local_0_GoogleColab_1_databricks_2 = 0
+    local_0_GoogleColab_1_databricks_2 = 2
 
     if (local_0_GoogleColab_1_databricks_2 == 1):
         import google.colab
