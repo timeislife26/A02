@@ -58,13 +58,32 @@ def my_main(spark,
     joinedDf = df.join(teamsDF, df["source"] == teamsDF["temp_source"], "full_outer")
     joinedDf = joinedDf.withColumnRenamed("team", "source_team")
     joinedDf = joinedDf.drop("temp_source")
+    solutionDF = inputDF.groupBy("source").agg({"source": "count"})
+    solutionDF = solutionDF.withColumn("cost", pyspark.sql.functions.when(pyspark.sql.functions.col("source") == source_node, 0).otherwise(-1))
+    solutionDF = solutionDF.withColumn("path", pyspark.sql.functions.when(pyspark.sql.functions.col("source") == source_node, str(source_node)).otherwise(""))
+    solutionDF = solutionDF.drop("count(source)")
 
 
     targetDf = joinedDf.join(teamsDF, teamsDF["temp_source"] == joinedDf["target"], "full_outer")#.select(joinedDf["source"], joinedDf["target"], joinedDf["source_team"], teamsDF["team"])
     targetDf = targetDf.select("source", "target", "weight", "cost", "source_team", "team")
     targetDf = targetDf.withColumnRenamed("team", "target_team").orderBy("source")
-    targetDf.show()
-
+    for i in range(1, num_nodes):
+        tempDF = (targetDf.where((pyspark.sql.functions.col("source_team") == "Red") & (pyspark.sql.functions.col("target_team") == "Blue")))
+        minValDF = tempDF.agg({"weight": "min"})
+        minVal = minValDF.collect()[0][0]
+        minRow = tempDF.filter(pyspark.sql.functions.col("weight") == minVal).collect()
+        targetChange = minRow[0][1]
+        currentWeight = minRow[0][2]
+        nodeFrom = minRow[0][0]
+        targetDf = targetDf.withColumn("source_team", pyspark.sql.functions.when(pyspark.sql.functions.col("source") == targetChange, "Red").otherwise(pyspark.sql.functions.col("source_team")))
+        targetDf = targetDf.withColumn("target_team", pyspark.sql.functions.when(pyspark.sql.functions.col("target") == targetChange, "Red").otherwise(pyspark.sql.functions.col("target_team")))
+        prevNode = solutionDF.filter(pyspark.sql.functions.col("source") == nodeFrom).collect()
+        prevWeight = prevNode[0][1]
+        prevPath = prevNode[0][2]
+        solutionDF = solutionDF.withColumn("cost", pyspark.sql.functions.when(pyspark.sql.functions.col("source") == targetChange, pyspark.sql.functions.lit(prevWeight + currentWeight)).otherwise(pyspark.sql.functions.col("cost")))
+        solutionDF = solutionDF.withColumn("path", pyspark.sql.functions.when(pyspark.sql.functions.col("source") == targetChange, pyspark.sql.functions.lit(prevPath + "-" + str(targetChange))).otherwise(pyspark.sql.functions.col("path")))
+    solutionDF = solutionDF.orderBy("source")
+    solutionDF = solutionDF.withColumnRenamed("source", "id")
 
 
     '''

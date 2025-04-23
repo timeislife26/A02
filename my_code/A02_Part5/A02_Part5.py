@@ -71,7 +71,6 @@ def my_spark_part_compute_graph(spark, my_dataset_dir):
     joinedDF = joinedDF.orderBy("start_station_name")
     solutionDF = joinedDF.withColumnRenamed("collect_list(stop_station_name)", "neighbours")
     solutionDF = solutionDF.withColumnRenamed("count(start_station_name)", "num_neighbours")
-    #solutionDF.show()
 
 
 
@@ -130,13 +129,12 @@ def my_python_part_compute_page_rank(edges_per_node,
         for key in edges_per_node: # Goes through each starting station
             for item in edges_per_node[key][1]: #Gets all the stations it the current station goes to
                 if item in new_dict:
-                    new_dict[key][1].append(new_dict[item][2]) # Adds that stations send value to the incoming values array of current station
-                else:
-                    new_dict[key][1].append(1)
+                    new_dict[item][1].append(new_dict[key][2]) # Adds that stations send value to the incoming values array of current station
         for key in edges_per_node: # Goes through each starting station
             new_dict[key][0] = reset_probability + (1-reset_probability) * sum(new_dict[key][1]) # sets the page rank for each station
-
-    sorted_dict = dict(sorted(new_dict.items(), key=lambda item: item[1][0], reverse=True))
+    for key in new_dict:
+        new_dict[key][0] = round(new_dict[key][0], 2)
+    sorted_dict = dict(sorted(new_dict.items(), key=lambda item: (-item[1][0],item[0])))
     for key in sorted_dict:
         print("station_name=" + key + "; pagerank=" + str(new_dict[key][0]))
 
