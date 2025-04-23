@@ -86,21 +86,7 @@ def my_main(spark,
     solutionDF = solutionDF.withColumnRenamed("source", "id")
 
 
-    '''
-    for i in range(1, num_nodes):
-        minVal1 = targetDf.where((pyspark.sql.functions.col("source_team") == "Red") & (pyspark.sql.functions.col("target_team") != pyspark.sql.functions.col("source_team"))).agg({"weight": "min"})
-        minVal = minVal1.collect()
-        row = targetDf.where((pyspark.sql.functions.col("weight") == minVal[0][0]) & (pyspark.sql.functions.col("source_team") == "Red"))
-        row.show()
-        targetDf = targetDf.withColumn("source_team", pyspark.sql.functions.when((pyspark.sql.functions.col("source") == row["target"]) | (pyspark.sql.functions.col("source_team") == "Red"), "Red").otherwise("Blue"))
-        print(minVal)
-    targetDf.show()'''
 
-
-    '''
-    minVal1 = joinedDf.where(joinedDf["source"] == 5).agg({"weight": "min"})
-    minVal = minVal1.collect()
-    print(minVal[0][0])'''
 
 
 
