@@ -47,12 +47,11 @@ def my_main(spark,
 
     # --------------------------------------------------------
     # START OF STUDENT CODE
-    # --------------------------------------------------------
 
-    df = inputDF.withColumn("cost", pyspark.sql.functions.lit(-1))
-    df = df.withColumn("cost", pyspark.sql.functions.when(df["source"] == 1,0).otherwise(-1))
+    df = inputDF.withColumn("cost", pyspark.sql.functions.lit(0))
+    #df = df.withColumn("cost", pyspark.sql.functions.when(df["source"] == source_node,0).otherwise(-1))
     teamsDF = df.groupBy("source").agg({"source": "count"})
-    teamsDF = teamsDF.withColumn("team", pyspark.sql.functions.when(df["source"] == 1,"Red").otherwise("Blue")).select("source", "team").orderBy("source")
+    teamsDF = teamsDF.withColumn("team", pyspark.sql.functions.when(df["source"] == source_node,"Red").otherwise("Blue")).select("source", "team").orderBy("source")
     num_nodes = teamsDF.count()
     teamsDF = teamsDF.withColumnRenamed("source", "temp_source")
     joinedDf = df.join(teamsDF, df["source"] == teamsDF["temp_source"], "full_outer")
@@ -67,23 +66,59 @@ def my_main(spark,
     targetDf = joinedDf.join(teamsDF, teamsDF["temp_source"] == joinedDf["target"], "full_outer")#.select(joinedDf["source"], joinedDf["target"], joinedDf["source_team"], teamsDF["team"])
     targetDf = targetDf.select("source", "target", "weight", "cost", "source_team", "team")
     targetDf = targetDf.withColumnRenamed("team", "target_team").orderBy("source")
+    targetDf = targetDf.withColumn("node_a", pyspark.sql.functions.least("source", "target")) \
+                        .withColumn("node_b", pyspark.sql.functions.greatest("source", "target"))
+    targetDf = targetDf.dropDuplicates(["node_a", "node_b"])
+    targetDf = targetDf.drop("node_a", "node_b")
+    targetDf = targetDf.withColumn("reached_target", pyspark.sql.functions.lit(False))
+    targetDf = targetDf.withColumn("path", pyspark.sql.functions.lit(str(source_node)))
     for i in range(1, num_nodes):
         tempDF = (targetDf.where((pyspark.sql.functions.col("source_team") == "Red") & (pyspark.sql.functions.col("target_team") == "Blue")))
-        minValDF = tempDF.agg({"weight": "min"})
-        minVal = minValDF.collect()[0][0]
-        minRow = tempDF.filter(pyspark.sql.functions.col("weight") == minVal).collect()
-        targetChange = minRow[0][1]
-        currentWeight = minRow[0][2]
-        nodeFrom = minRow[0][0]
-        targetDf = targetDf.withColumn("source_team", pyspark.sql.functions.when(pyspark.sql.functions.col("source") == targetChange, "Red").otherwise(pyspark.sql.functions.col("source_team")))
-        targetDf = targetDf.withColumn("target_team", pyspark.sql.functions.when(pyspark.sql.functions.col("target") == targetChange, "Red").otherwise(pyspark.sql.functions.col("target_team")))
-        prevNode = solutionDF.filter(pyspark.sql.functions.col("source") == nodeFrom).collect()
-        prevWeight = prevNode[0][1]
-        prevPath = prevNode[0][2]
-        solutionDF = solutionDF.withColumn("cost", pyspark.sql.functions.when(pyspark.sql.functions.col("source") == targetChange, pyspark.sql.functions.lit(prevWeight + currentWeight)).otherwise(pyspark.sql.functions.col("cost")))
-        solutionDF = solutionDF.withColumn("path", pyspark.sql.functions.when(pyspark.sql.functions.col("source") == targetChange, pyspark.sql.functions.lit(prevPath + "-" + str(targetChange))).otherwise(pyspark.sql.functions.col("path")))
-    solutionDF = solutionDF.orderBy("source")
+        tempDF = tempDF.withColumnRenamed("source", "temp_source")
+        tempDF = tempDF.withColumnRenamed("target", "temp_target")
+        tempDF = tempDF.withColumnRenamed("target_team", "temp_target_team")
+
+        tempDF = tempDF.orderBy("weight")
+        tempDF = tempDF.withColumn("cost", pyspark.sql.functions.col("cost") + pyspark.sql.functions.col("weight"))
+        tempDF = tempDF.limit(1)
+        tempDF = tempDF.withColumnRenamed("cost", "temp_cost")
+        tempDF = tempDF.select("temp_source", "temp_target", "temp_cost","temp_target_team")
+        tempDF = tempDF.withColumn("temp_target_team", pyspark.sql.functions.lit("Red"))
+
+        targetDf = targetDf.join(tempDF, (targetDf["source"] == tempDF["temp_source"]) & (targetDf["target"] == tempDF["temp_target"]), "left")
+        targetDf = targetDf.withColumn("target_team", pyspark.sql.functions.when(pyspark.sql.functions.col("temp_target_team").isNotNull(), pyspark.sql.functions.col("temp_target_team")).otherwise(pyspark.sql.functions.col("target_team")))
+        targetDf = targetDf.withColumn("reached_target", pyspark.sql.functions.when(pyspark.sql.functions.col("temp_target_team").isNotNull(), True).otherwise(pyspark.sql.functions.col("reached_target")))
+
+
+        targetDf = targetDf.withColumn("path", pyspark.sql.functions.when(pyspark.sql.functions.col("temp_target_team").isNotNull(), pyspark.sql.functions.concat(
+            pyspark.sql.functions.col("path").cast("string"), pyspark.sql.functions.lit("-"), pyspark.sql.functions.col("target").cast("string")
+        )).otherwise(pyspark.sql.functions.col("path")))
+
+
+        targetDf = targetDf.withColumn("cost", pyspark.sql.functions.when(pyspark.sql.functions.col("temp_cost").isNotNull(), pyspark.sql.functions.col("temp_cost")).otherwise(pyspark.sql.functions.col("cost")))
+        targetDf = targetDf.select("source", "target", "weight", "cost", "source_team", "target_team", "reached_target", "path")
+        targetDf = targetDf.join(tempDF, targetDf["source"] == tempDF["temp_target"], "left")
+
+        targetDf = targetDf.withColumn("path", pyspark.sql.functions.when(pyspark.sql.functions.col("source") == pyspark.sql.functions.col("temp_target"), pyspark.sql.functions.concat(
+            pyspark.sql.functions.col("path").cast("string"), pyspark.sql.functions.lit("-"), pyspark.sql.functions.col("source").cast("string")
+        )).otherwise(pyspark.sql.functions.col("path")))
+
+        targetDf = targetDf.withColumn("source_team", pyspark.sql.functions.when(pyspark.sql.functions.col("temp_cost").isNotNull(), "Red").otherwise(pyspark.sql.functions.col("source_team")))
+        targetDf = targetDf.withColumn("cost", pyspark.sql.functions.when(pyspark.sql.functions.col("temp_cost").isNotNull(), pyspark.sql.functions.col("temp_cost")).otherwise(pyspark.sql.functions.col("cost")))
+        targetDf = targetDf.select("source", "target", "weight", "cost", "source_team", "target_team", "reached_target", "path")
+        targetDf.show()
+
+    targetDf = targetDf.filter(targetDf["reached_target"] == True)
+    targetDf.show()
     solutionDF = solutionDF.withColumnRenamed("source", "id")
+    solutionDF = solutionDF.withColumnRenamed("cost", "c")
+    solutionDF = solutionDF.withColumnRenamed("path", "p")
+    solutionDF.show()
+    solutionDF = solutionDF.join(targetDf, solutionDF["id"] == targetDf["target"], "left")
+    solutionDF = solutionDF.orderBy("id")
+    solutionDF = solutionDF.withColumn("cost", pyspark.sql.functions.when(pyspark.sql.functions.col("c") >= 0, pyspark.sql.functions.col("c")).otherwise(pyspark.sql.functions.col("cost")))
+    solutionDF = solutionDF.withColumn("path", pyspark.sql.functions.when(pyspark.sql.functions.col("p") != "", pyspark.sql.functions.col("p")).otherwise(pyspark.sql.functions.col("path")))
+    solutionDF = solutionDF.select("id", "cost", "path")
 
 
 
